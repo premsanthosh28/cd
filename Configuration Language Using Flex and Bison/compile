@@ -1,0 +1,4 @@
+bison -d config.y
+flex config.l
+g++ config.tab.c lex.yy.c -o config -lfl
+./config
