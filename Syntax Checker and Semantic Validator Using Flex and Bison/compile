@@ -1,0 +1,4 @@
+bison -d math.y
+flex math.l
+g++ math.tab.c lex.yy.c -o math -lfl
+./math
